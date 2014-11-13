@@ -35,11 +35,11 @@
 
         <Grid Grid.Column="1" Background="White" DataContext="{Binding ElementName=AircraftEquipmentConfigTreeView}">
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <Expander Header="HW Part">
+            <Expander Header="HW Part" MinHeight="50">
                                 
                 <ListView ItemsSource="{Binding SelectedItem.mSubEquipment.mHWPartList}" ScrollViewer.HorizontalScrollBarVisibility="Auto">
                     <ListView.View >
@@ -55,8 +55,8 @@
             </Expander>
             <GridSplitter Height="1.5" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FF294E38"></GridSplitter>
 
-            <Expander Header="SW_Config" Grid.Row="1">
-                <Grid>
+            <Expander Header="SW_Config" Grid.Row="1"  MinHeight="50">
+                <Grid DataContext="{Binding ElementName=AircraftEquipmentConfigTreeView}">
                     <!-- Define four rows: -->
                     <Grid.RowDefinitions>
                         <RowDefinition/>
@@ -64,16 +64,36 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <!-- Define two columns: -->
+
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="150" />
-                        <ColumnDefinition Width="350" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
 
-                    <Label Grid.Row="0" Grid.Column="0">SW Location ID:</Label>
-                    <Label Grid.Row="0" Grid.Column="1" />
-                    <Label Grid.Row="1" Grid.Column="0">SW Location Description:</Label>
-                    <Label Grid.Row="1" Grid.Column="1" />
-                    <ListView Grid.Row="2" Grid.ColumnSpan="2">
+                    <TreeView Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" ItemsSource="{Binding SelectedItem.mSubEquipment.mSWConfigList}">
+                        <TreeView.ItemTemplate>
+                            <HierarchicalDataTemplate >
+                                <TreeViewItem Header="{Binding mSWConfigIndex}" ItemsSource="{Binding mSWPartList}">
+                                    <TreeViewItem.ItemTemplate>
+                                        <HierarchicalDataTemplate>
+                                            <TreeViewItem Header="{Binding mSWPartIndex}"/>
+                                        </HierarchicalDataTemplate>
+                                    </TreeViewItem.ItemTemplate>
+                                </TreeViewItem>
+                                <HierarchicalDataTemplate.ItemBindingGroup>
+                                    <BindingGroup/>
+                                </HierarchicalDataTemplate.ItemBindingGroup>
+                            </HierarchicalDataTemplate>
+                        </TreeView.ItemTemplate>
+                    </TreeView>
+
+                    <GridSplitter Width="1.5" Grid.Column="0" Grid.RowSpan="3" Background="#FF294E38"/>
+                    <Label Grid.Row="0" Grid.Column="1">SW Location ID:</Label>
+                    <Label Grid.Row="0" Grid.Column="2" />
+                    <Label Grid.Row="1" Grid.Column="1">SW Location Description:</Label>
+                    <Label Grid.Row="1" Grid.Column="2" />
+                    <ListView Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2">
                         <ListView.View>
                             <GridView >
                                 <GridViewColumn Header="SW Part Index" Width="100" />
@@ -85,8 +105,8 @@
                 </Grid>
             </Expander>
 
-            <GridSplitter Height="1.5" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FF294E38"></GridSplitter>
-            <Expander Header="Config info" Grid.Row="2">
+            <GridSplitter Height="1.5" Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FF294E38"></GridSplitter>
+            <Expander Header="Config info" Grid.Row="2"  MinHeight="50">
                 <Grid>
                     <!-- Define four rows: -->
                     <Grid.RowDefinitions>

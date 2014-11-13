@@ -43,11 +43,59 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mEquipmentID = "Equipment_ID: 1";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_1","1","1","1","1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_2", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 2";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_11", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_21", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 3";
@@ -59,11 +107,59 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_211", "2", "2", "2", "2"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_111", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_211", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 4";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_114s1", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_214s1", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             myList.Add(lAirCraftEquipmentConfig1);
 
@@ -74,16 +170,88 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mEquipmentID = "Equipment_ID: 1";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_1222", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_2222", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 2";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_1333", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_2333", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 3";
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_1444", "1", "1", "1", "1"));
             lSubEquipment.mHWPartList.Add(new HWPart("HW_PART_2444", "2", "2", "2", "2"));
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig1",
+                    mSWLocationID = "2",
+                    mSWLocationDescription = "d",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig2",
+                    mSWLocationID = "23",
+                    mSWLocationDescription = "d11",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
+            lSubEquipment.mSWConfigList.Add(
+                new SWConfig
+                {
+                    mSWConfigIndex = "SWconfig4",
+                    mSWLocationID = "244",
+                    mSWLocationDescription = "d421cdd",
+                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             myList.Add(lAirCraftEquipmentConfig1);
 
