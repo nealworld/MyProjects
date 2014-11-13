@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Projects\Projects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\
+D:\Projects\Projects\MyProjects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\
 TreeViewWithViewModelDemo
 none
 false
 TRACE
-D:\Projects\Projects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\App.xaml
+D:\Projects\Projects\MyProjects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\App.xaml
 31687177347
 
 14-418240682
-12-707499337
+12-934477883
 LoadOnDemand\LoadOnDemandDemoControl.xaml;TextSearch\TextSearchDemoControl.xaml;DemoWindow.xaml;
 
-True
+False
 

@@ -30,3 +30,5 @@ E:\backup\百度云同步盘\Projects\TreeViewTest\TreeViewTest\obj\x86\Release\
 E:\backup\百度云同步盘\Projects\TreeViewTest\TreeViewTest\obj\x86\Release\TreeViewTest.g.resources
 E:\backup\百度云同步盘\Projects\TreeViewTest\TreeViewTest\obj\x86\Release\TreeViewTest.Properties.Resources.resources
 E:\backup\百度云同步盘\Projects\TreeViewTest\TreeViewTest\obj\x86\Release\TreeViewTest.csproj.GenerateResource.Cache
+D:\Projects\Projects\MyProjects\TreeViewTest\TreeViewTest\obj\x86\Release\TreeViewTest.exe
+D:\Projects\Projects\MyProjects\TreeViewTest\TreeViewTest\obj\x86\Release\TreeViewTest.pdb

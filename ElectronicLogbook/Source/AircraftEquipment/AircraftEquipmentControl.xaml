@@ -3,27 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
-    <DockPanel>
-        <!--<TreeView Name="AircraftEquipmentConfigTreeView" ItemsSource="{Binding mAirCraftEquipmentConfigList}" BorderBrush="Transparent" DockPanel.Dock="Left">
-            <TreeView.ItemTemplate>
-                <HierarchicalDataTemplate ItemsSource="{Binding}">
-                    <TreeView BorderBrush="Transparent">
-                        <TreeViewItem Header="{Binding Path=mConfigName}" BorderBrush="Transparent">
-                            
-                            <TreeView ItemsSource="{Binding Path=mSubEquipmentList}" BorderBrush="Transparent">
-                                <TreeView.ItemTemplate>
-                                    <HierarchicalDataTemplate ItemsSource="{Binding}">
-                                        <TextBlock Text="{Binding mEquipmentID}"/>
-                                    </HierarchicalDataTemplate>
-                                </TreeView.ItemTemplate>
-                            </TreeView>
-                        </TreeViewItem>
-                    </TreeView>
-                </HierarchicalDataTemplate>
-            </TreeView.ItemTemplate>
-
-        </TreeView>-->
-        <TreeView Name="AircraftEquipmentConfigTreeView" ItemsSource="{Binding mAirCraftEquipmentConfigViewModelList}" Padding="5,1,10,1" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TreeView BorderBrush="Transparent" Grid.Column="0" Name="AircraftEquipmentConfigTreeView" ItemsSource="{Binding mAirCraftEquipmentConfigViewModelList}" Padding="10,0,10,0">
             <TreeView.ItemContainerStyle>
                 <Style TargetType="{x:Type TreeViewItem}">
                     <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
@@ -40,7 +25,7 @@
 
                 <HierarchicalDataTemplate ItemsSource="{Binding Path=mSubEquipmentViewModelList}">
 
-                    <TextBlock Text="{Binding Path=mNodeName}"  />
+                    <TextBlock Text="{Binding Path=mNodeName}"/>
 
                 </HierarchicalDataTemplate>
 
@@ -48,63 +33,29 @@
 
         </TreeView>
 
-        <StackPanel Background="White" DataContext="{Binding ElementName=AircraftEquipmentConfigTreeView}">
-            <Expander Header="HW Part" >
-                
-                <ListView>
-                    <ListView.View>
+        <Grid Grid.Column="1" Background="White" DataContext="{Binding ElementName=AircraftEquipmentConfigTreeView}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Expander Header="HW Part">
+                                
+                <ListView ItemsSource="{Binding SelectedItem.mSubEquipment.mHWPartList}" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                    <ListView.View >
                         <GridView >
-                            <GridViewColumn Header="HW Part Index" Width="100" />
-                            <GridViewColumn Header="HW Part Number" Width="100" />
-                            <GridViewColumn Header="HW Part Description"  Width="150" />
-                            <GridViewColumn Header="HW Part Status"  Width="250" />
-                            <GridViewColumn Header="HW Part Serial Number"  Width="250" />
+                            <GridViewColumn Header="HW Part Index" DisplayMemberBinding="{Binding mHWPartIndex}" Width="150" />
+                            <GridViewColumn Header="HW Part Number" DisplayMemberBinding="{Binding mHWPartNumber}" Width="150" />
+                            <GridViewColumn Header="HW Part Description"  DisplayMemberBinding="{Binding mHWPartDescription}" Width="150" />
+                            <GridViewColumn Header="HW Part Status"  DisplayMemberBinding="{Binding mHWPartStatus}" Width="250" />
+                            <GridViewColumn Header="HW Part Serial Number"  DisplayMemberBinding="{Binding mHWPartSerialNumber}" />
                         </GridView>
                     </ListView.View>
                 </ListView>
-                <!--
-                <Grid>
-
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition />
-                        <ColumnDefinition Width="150" />
-                        <ColumnDefinition Width="350" />
-                    </Grid.ColumnDefinitions>
-
-                    <TreeView Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"
-                        Name="HWPartTreeView" ItemsSource="{Binding Path=SelectedItem.SelectedItem.SelectedItem.mHWPartList}" Padding="5,1,10,1" >
-                        
-                        <TreeView.ItemTemplate>
-
-                            <HierarchicalDataTemplate ItemsSource="{Binding}">
-
-                                <TextBlock Text="{Binding Path=mHWPartIndex}"  />
-
-                            </HierarchicalDataTemplate>
-
-                        </TreeView.ItemTemplate>
-
-                    </TreeView>
-
-                    <Label Grid.Row="0" Grid.Column="1">HW Part Number:</Label>
-                    <Label Grid.Row="0" Grid.Column="2" Name="label2"/>
-                    <Label Grid.Row="1" Grid.Column="1">HW Part Description:</Label>
-                    <Label Grid.Row="1" Grid.Column="2"/>
-                    <Label Grid.Row="2" Grid.Column="1">HW Part Status:</Label>
-                    <Label Grid.Row="2" Grid.Column="2"/>
-                    <Label Grid.Row="3" Grid.Column="1">HW Part Serial Number:</Label>
-                    <Label Grid.Row="3" Grid.Column="2" />
-                </Grid>
-                -->
             </Expander>
-            <Expander Header="SW_Config">
+            <GridSplitter Height="1.5" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FF294E38"></GridSplitter>
+
+            <Expander Header="SW_Config" Grid.Row="1">
                 <Grid>
                     <!-- Define four rows: -->
                     <Grid.RowDefinitions>
@@ -133,7 +84,9 @@
                     </ListView>
                 </Grid>
             </Expander>
-            <Expander Header="Config info">
+
+            <GridSplitter Height="1.5" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Background="#FF294E38"></GridSplitter>
+            <Expander Header="Config info" Grid.Row="2">
                 <Grid>
                     <!-- Define four rows: -->
                     <Grid.RowDefinitions>
@@ -153,7 +106,7 @@
                     </ListView>
                 </Grid>
             </Expander>
-        </StackPanel>
+        </Grid>
 
-    </DockPanel>
+    </Grid>
 </UserControl>

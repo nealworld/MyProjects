@@ -38,3 +38,5 @@ E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDe
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\TreeViewWithViewModelDemo.csproj.GenerateResource.Cache
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\TreeViewWithViewModelDemo.exe
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\TreeViewWithViewModelDemo.pdb
+D:\Projects\Projects\MyProjects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\TreeViewWithViewModelDemo.exe
+D:\Projects\Projects\MyProjects\InterestingProject\TreeViewWithViewModelDemo\TreeViewWithViewModelDemo\obj\Release\TreeViewWithViewModelDemo.pdb

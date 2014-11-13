@@ -18,3 +18,9 @@ D:\Projects\Projects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\CSha
 D:\Projects\Projects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.csprojResolveAssemblyReference.cache
 D:\Projects\Projects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.dll
 D:\Projects\Projects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.pdb
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\ElectronicLogbookDataLib.dll
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\ElectronicLogbookDataLib.pdb
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\CommonSimDotNet.dll
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\CSharpWrapper_ASN1Decoder.dll
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.dll
+D:\Projects\Projects\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.pdb
