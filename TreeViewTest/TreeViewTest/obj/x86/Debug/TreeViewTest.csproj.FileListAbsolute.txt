@@ -1,0 +1,13 @@
+D:\2012\TreeViewTest\TreeViewTest\bin\Debug\TreeViewTest.exe
+D:\2012\TreeViewTest\TreeViewTest\bin\Debug\TreeViewTest.pdb
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\MainWindow.baml
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\MainWindow.g.cs
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\App.g.cs
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\TreeViewTest_MarkupCompile.cache
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\TreeViewTest.g.resources
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\TreeViewTest.Properties.Resources.resources
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\TreeViewTest.exe
+D:\2012\TreeViewTest\TreeViewTest\obj\x86\Debug\TreeViewTest.pdb

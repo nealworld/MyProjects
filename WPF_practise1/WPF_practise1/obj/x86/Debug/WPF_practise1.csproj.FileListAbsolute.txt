@@ -1,0 +1,11 @@
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\MainWindow.baml
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\App.g.cs
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1_MarkupCompile.cache
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1.g.resources
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1.Properties.Resources.resources
+D:\Projects\WPF_practise1\WPF_practise1\bin\Debug\WPF_practise1.exe
+D:\Projects\WPF_practise1\WPF_practise1\bin\Debug\WPF_practise1.pdb
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\MainWindow.g.cs
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1.exe
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1.pdb
+D:\Projects\WPF_practise1\WPF_practise1\obj\x86\Debug\WPF_practise1.csproj.GenerateResource.Cache

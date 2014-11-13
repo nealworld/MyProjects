@@ -1,0 +1,35 @@
+<AIRCRAFT_EQUIPMENT>
+
+The Configuration for GPM_R2 is:
+Equipment_ID: 50
+HW_Part
+    HW_Part_Number: UB12345
+    HW_Part_Description: LRI1
+    HW_Part_Status: A.B
+    HW_Part_Serial_Number: SN121
+SW_Config
+    SW_Location_ID: AB0023
+    SW_Location_Description: HW_1
+    SW_Part_1
+        LSAP_Part_Number: ABC11-1234-1234
+        LSAP_Description: 45 HW1_SW1
+    SW_Part_2
+        LSAP_Part_Number: ABC11-5678-5678
+        LSAP_Description: 50 HW1_SW2
+Config_Info_1: Other Item #1
+Config_Info_2: Other Item #2
+
+<VAIS PARTICIPANTS>
+
+Participant A Name,Participant A Part Number,Participant A Version Number,Participant A Description,Participant A Location
+Participant B Name,Participant B Part Number,Participant B Version Number,Participant B Description,Participant B Location
+
+<DEVICE DRIVERS>
+
+Device A Name,Device A Driver Name,Device A Driver Version Number,Device A Driver Location
+Device B Name,Device B Driver Name,Device B Driver Version Number,Device B Driver Location
+
+<THIRD PARTY SOFTWARE>
+
+Software A Name,Software A Version Number,Software A Location
+Software B Name,Software B Version Number,Software B Location

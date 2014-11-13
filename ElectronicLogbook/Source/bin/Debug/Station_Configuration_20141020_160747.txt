@@ -1,0 +1,13 @@
+<AIRCRAFT_EQUIPMENT>
+
+<VAIS PARTICIPANTS>
+
+ControlPanel,558168,006,The control panel for the common simulation network.,DefaultNodeName
+Electronic_Logbook,1002197-002,01,Electronic_Logbook,DefaultNodeName
+DefaultNodeName,558167,006,CommonSimRuntime,DefaultNodeName
+
+<DEVICE DRIVERS>
+
+
+<THIRD PARTY SOFTWARE>
+
