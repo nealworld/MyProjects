@@ -8,7 +8,7 @@ using System.ComponentModel;
 
 namespace ElectronicLogbook.AircraftEquipment.ViewModel
 {
-    public class AirCraftEquipmentConfigViewModel : INotifyPropertyChanged
+    public class AirCraftEquipmentConfigViewModel
     {
         #region abandon
         /* public List<AirCraftEquipmentConfig> mAirCraftEquipmentConfigList { set; get; }
@@ -30,27 +30,7 @@ namespace ElectronicLogbook.AircraftEquipment.ViewModel
         public List<AirCraftEquipmentConfigViewModel> mAirCraftEquipmentConfigViewModelList { set; get; }
         public String mNodeName { set; get; }
         public List<SubEquipmentViewModel> mSubEquipmentViewModelList { set; get; }
-        private bool _isSelected;
-        public bool IsSelected
-        {
-            get { return _isSelected; }
-            set
-            {
-                if (value != _isSelected)
-                {
-                    _isSelected = value;
-                    this.OnPropertyChanged("IsSelected");
-                }
-            }
-        }
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName)
-        {
-            if (this.PropertyChanged != null)
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-        }
-
+        
         public AirCraftEquipmentConfigViewModel()
         {
             mAirCraftEquipmentConfigViewModelList = new List<AirCraftEquipmentConfigViewModel>();

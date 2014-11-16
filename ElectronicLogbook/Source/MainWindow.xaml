@@ -4,7 +4,7 @@
         xmlns:local="clr-namespace:ElectronicLogbook"
         xmlns:tab1="clr-namespace:ElectronicLogbook.AircraftEquipment"
         FontSize="14"
-        Title="ELB" Height="500" Width="1000" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+        Title="ELB" Height="Auto" Width="Auto" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
     <DockPanel>
         <Menu Background="White" Height="23" HorizontalAlignment="Stretch" Name="menu1" VerticalAlignment="Top" Margin="0" DockPanel.Dock="Top">
             <MenuItem Header="Expect" >

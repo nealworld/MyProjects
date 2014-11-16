@@ -30,3 +30,4 @@ E:\Project\GitHub\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Rele
 E:\Project\GitHub\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\bin\Release\CSharpWrapper_ASN1Decoder.dll
 E:\Project\GitHub\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.dll
 E:\Project\GitHub\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.pdb
+E:\Project\GitHub\MyProjects\ElectronicLogbook\ElectronicLogbookDataLib\obj\Release\ElectronicLogbookDataLib.csprojResolveAssemblyReference.cache

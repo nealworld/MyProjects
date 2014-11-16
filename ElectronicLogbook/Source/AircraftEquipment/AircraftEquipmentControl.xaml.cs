@@ -46,7 +46,7 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig1",
+                    mSWConfigIndex = "SWsssnfig1",
                     mSWLocationID = "2",
                     mSWLocationDescription = "d",
                     mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
@@ -54,19 +54,31 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig2",
-                    mSWLocationID = "23",
-                    mSWLocationDescription = "d11",
+                    mSWConfigIndex = "SWc2222ig2",
+                    mSWLocationID = "2qq3",
+                    mSWLocationDescription = "d1dd1",
                     mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
                 });
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig4",
-                    mSWLocationID = "244",
+                    mSWConfigIndex = "SWweig4",
+                    mSWLocationID = "24sd4",
                     mSWLocationDescription = "d421cdd",
                     mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
                 });
+            lSubEquipment.mConfigInfoList.Add(
+                new ConfigInfo 
+                { 
+                    mItemIndex="ss",
+                    mItemInfo="ss2222"
+                });
+            lSubEquipment.mConfigInfoList.Add(
+               new ConfigInfo
+               {
+                   mItemIndex = "s1s",
+                   mItemInfo = "ss224sssghfgde22"
+               });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 2";
@@ -75,27 +87,63 @@ namespace ElectronicLogbook.AircraftEquipment
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig1",
-                    mSWLocationID = "2",
+                    mSWConfigIndex = "SWcw22nfig1",
+                    mSWLocationID = "2sd",
                     mSWLocationDescription = "d",
-                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                    mSWPartList = { new SWPart("SW434v3Part1", "22", "3v353"), new SWPart("SWPar3v45t2", "24 f fr32", "33") }
                 });
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig2",
-                    mSWLocationID = "23",
+                    mSWConfigIndex = "SWcss3bbbbgggonfig2",
+                    mSWLocationID = "2dee444444444443",
                     mSWLocationDescription = "d11",
                     mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
                 });
             lSubEquipment.mSWConfigList.Add(
                 new SWConfig
                 {
-                    mSWConfigIndex = "SWconfig4",
-                    mSWLocationID = "244",
-                    mSWLocationDescription = "d421cdd",
-                    mSWPartList = { new SWPart("SWPart1", "22", "33"), new SWPart("SWPart2", "22", "33") }
+                    mSWConfigIndex = "S==++onfig4",
+                    mSWLocationID = "2{{j,44",
+                    mSWLocationDescription = "d4267567;'p[1cdd",
+                    mSWPartList = { new SWPart("SWPax34rt1", "2123x12", "3t3"), new SWPart("SWPart2", "22", "33") }
                 });
+            lSubEquipment.mConfigInfoList.Add(
+                new ConfigInfo
+                {
+                    mItemIndex = "ssxs3v423d33",
+                    mItemInfo = "ss222gv234c2gfgf2"
+                });
+            lSubEquipment.mConfigInfoList.Add(
+               new ConfigInfo
+               {
+                   mItemIndex = "s1s",
+                   mItemInfo = "sl0000000ghfgde22"
+               });
+            lSubEquipment.mConfigInfoList.Add(
+                new ConfigInfo
+                {
+                    mItemIndex = "ssxsd33",
+                    mItemInfo = "ss222gvgfgf2"
+                });
+            lSubEquipment.mConfigInfoList.Add(
+               new ConfigInfo
+               {
+                   mItemIndex = "s12",
+                   mItemInfo = "slllde22"
+               });
+            lSubEquipment.mConfigInfoList.Add(
+                new ConfigInfo
+                {
+                    mItemIndex = "ssx2dd33",
+                    mItemInfo = "ss2aafgfgf2"
+                });
+            lSubEquipment.mConfigInfoList.Add(
+               new ConfigInfo
+               {
+                   mItemIndex = "seq2er1s",
+                   mItemInfo = "sl00aaqde22"
+               });
             lAirCraftEquipmentConfig1.mSubEquipmentList.Add(lSubEquipment);
             lSubEquipment = new SubEquipment();
             lSubEquipment.mEquipmentID = "Equipment_ID: 3";
@@ -256,11 +304,6 @@ namespace ElectronicLogbook.AircraftEquipment
             myList.Add(lAirCraftEquipmentConfig1);
 
             return myList;
-        }
-
-        private void Expander_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
-        {
-
         }
     }
 }

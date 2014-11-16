@@ -7,3 +7,8 @@ E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDe
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.csprojResolveAssemblyReference.cache
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.dll
 E:\backup\百度云同步盘\Projects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.pdb
+E:\Project\GitHub\MyProjects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\bin\Release\BusinessLib.dll
+E:\Project\GitHub\MyProjects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\bin\Release\BusinessLib.pdb
+E:\Project\GitHub\MyProjects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.csprojResolveAssemblyReference.cache
+E:\Project\GitHub\MyProjects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.dll
+E:\Project\GitHub\MyProjects\InterestingProject\TreeViewWithViewModelDemo\BusinessLib\obj\Release\BusinessLib.pdb
