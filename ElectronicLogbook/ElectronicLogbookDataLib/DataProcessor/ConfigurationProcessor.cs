@@ -18,6 +18,7 @@ namespace ElectronicLogbookDataLib.DataProcessor
         private List<A664ACRMessagePeriodicInput> mAllEquipmentMsgList = new List<A664ACRMessagePeriodicInput>();
         private static ConfigurationProcessor mConfigProcessor;
         private ELBParticipant mELBParticipant;
+        private List<string> m3rdPartySWCheckList = new List<string>();
 
         private Error LoadELBConfig() {
             if (!System.IO.File.Exists(mELBConfig))
@@ -58,7 +59,7 @@ namespace ElectronicLogbookDataLib.DataProcessor
                         {
                             if (lConfigType == 2)
                             {
-                                //m3rdPartySWCheckList.Add(lContent);
+                                m3rdPartySWCheckList.Add(lContent);
                             }
                             else if (lConfigType == 3)
                             {
@@ -165,6 +166,122 @@ namespace ElectronicLogbookDataLib.DataProcessor
             }
 
             return lAirCraftEquipmentConfigList;
+        }
+
+        public List<VAISParticipant> GetVAISParticipantList()
+        {
+            List<VAISParticipant> lResult = new List<VAISParticipant>();
+            foreach (GEAviation.CommonSim.Runtime lRuntime in mELBParticipant.mUtilityParticipant.Runtimes)
+            {
+                string lLocation = lRuntime.Name;
+                foreach (GEAviation.CommonSim.RemoteParticipant participant in lRuntime.RemoteParticipants)
+                {
+                    lResult.Add(new VAISParticipant
+                    {
+                        mParticipantName = participant.Name,
+                        mParticipantPartNumber = participant.ReadTag("PartNumber"),
+                        mParticipantVersionNumber = participant.ReadTag("VersionInformation"),
+                        mParticipantDescription = participant.ReadTag("Description"),
+                        mParticipantLocation = lLocation
+                    });
+                }
+            }
+            return lResult;
+        }
+
+        private void GetDriverAnd3rdPartyConfig(out string aDriverConfig, out string a3rdPartySW)
+        {
+            List<bool> lMessageReceived = new List<bool>();
+            List<GEAviation.CommonSim.Collection> lStationBusList = new List<GEAviation.CommonSim.Collection>();
+            aDriverConfig = "";
+            a3rdPartySW = "";
+            foreach (GEAviation.CommonSim.Runtime lRuntime in mELBParticipant.mUtilityParticipant.Runtimes)//all stations
+            {
+                //the name should be same as the name used in "ElectronicLogbook_Slave"
+                string lNPDMessageReceivedName = "NPD_ElectronicLogbookSlave_Message_" + lRuntime.Name;
+                GEAviation.CommonSim.Collection lNPDMessageRecieved = mELBParticipant.mUtilityParticipant.CreateCollection(lNPDMessageReceivedName);
+                if (lNPDMessageRecieved != null)
+                {
+                    lNPDMessageRecieved.CreateParameter("NPD_Parameter_Driver", GEAviation.CommonSim.CommonSimTypes.ValueType.CharArray);
+                    lNPDMessageRecieved.CreateParameter("NPD_Parameter_3rdParty", GEAviation.CommonSim.CommonSimTypes.ValueType.CharArray);
+
+                    lNPDMessageRecieved.Subscribe(GEAviation.CommonSim.CommonSimTypes.QueueType.Snapshot);
+                    lMessageReceived.Add(false);
+                    lStationBusList.Add(lNPDMessageRecieved);
+                }
+
+                string lNPDMessageName = lRuntime.Name + ".Startup";
+                GEAviation.CommonSim.Collection lNPDMessage = mELBParticipant.mUtilityParticipant.GetCollection(lNPDMessageName);
+                if (lNPDMessage != null)
+                {
+                    //send message to the station runtion to invoke "ElectronicLogbookSlave.exe"
+                    lNPDMessage.Publish();
+                    GEAviation.CommonSim.Parameter lAppName = lNPDMessage.GetParameter("ExecutablePath");
+                    GEAviation.CommonSim.Parameter lArgument = lNPDMessage.GetParameter("ArgumentString");
+
+                    lAppName.SetValue(AppDomain.CurrentDomain.SetupInformation.ApplicationBase + "ElectronicLogbookSlave.exe");
+                    lArgument.SetValue(lRuntime.Name);
+
+                    lNPDMessage.Send();
+                }
+            }
+
+            int lTryTimes = 0;//try to get message from each station, but just try 3 times.
+            int lMessageBusCount = lMessageReceived.Count;
+            while (lMessageBusCount != 0 && lTryTimes < 3)
+            {
+                Thread.Sleep(500);//sleep a while for others to send the messages out.
+
+                int i = -1;
+                while (i < lMessageReceived.Count - 1)
+                {
+                    i++;
+                    if (lMessageReceived[i])//this message was received in last loop
+                        continue;
+
+                    GEAviation.CommonSim.Collection lNPDMessage = lStationBusList[i];
+                    //receive messages from station
+                    if (lNPDMessage.Receive())
+                    {
+                        aDriverConfig += lNPDMessage.GetParameter("NPD_Parameter_Driver").GetValueAsString();
+
+                        string l3rdPartySWList = lNPDMessage.GetParameter("NPD_Parameter_3rdParty").GetValueAsString();
+                        a3rdPartySW += Filter3rdPartySWFromConfigFile(l3rdPartySWList, lNPDMessage.Name.Replace("NPD_ElectronicLogbookSlave_Message_", ""));
+
+                        lMessageReceived[i] = true;
+                        lMessageBusCount--;
+                    }
+                }
+
+                lTryTimes++;
+            }
+
+        }
+
+        /// <summary>
+        /// The "ElectronicLogbookSlave.exe" sends all the running process names back, but only the desired 
+        /// 3rd party SW should be shown on GUI.
+        /// </summary>
+        private string Filter3rdPartySWFromConfigFile(string aProcessList, string aLocation)
+        {
+            string lResult = "";
+
+            foreach (string lSWName in m3rdPartySWCheckList)
+            {
+                int lStartIndex = aProcessList.IndexOf(lSWName, StringComparison.OrdinalIgnoreCase);
+                if (lStartIndex >= 0)
+                {
+                    string lSW = aProcessList.Substring(lStartIndex);
+                    int lEndIndex = lSW.IndexOf(';');
+
+                    lResult += lSW.Substring(0, lEndIndex);
+                    lResult += ',';
+                    lResult += aLocation;
+                    lResult += '\n';
+                }
+            }
+
+            return lResult;
         }
 
         private void GetDecodedMessage(ref AirCraftEquipmentConfig aAirCraftEquipmentConfig, CSharpWrapper_ASN1Decoder.ASN1_Wrapper aWrapNode, ASN1_Decoder_ConfigReport aGrammarNode, string aPrefix)

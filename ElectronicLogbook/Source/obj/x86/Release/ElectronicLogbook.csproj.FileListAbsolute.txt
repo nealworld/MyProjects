@@ -102,3 +102,5 @@ E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\MainWindow
 E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.g.resources
 E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.Properties.Resources.resources
 E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.csproj.GenerateResource.Cache
+D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\VAISParticipantControl.baml
+D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\VAISParticipantControl.g.cs

@@ -63,7 +63,10 @@
     <Compile Include="DataProcessor\ConfigurationProcessor.cs" />
     <Compile Include="DataProcessor\ELBParticipant.cs" />
     <Compile Include="DataProcessor\Error.cs" />
+    <Compile Include="DeviceDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThirdPartySoftware.cs" />
+    <Compile Include="VAISParticipant.cs" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
