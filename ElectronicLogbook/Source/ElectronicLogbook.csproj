@@ -77,14 +77,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AircraftEquipment\AircraftEquipmentControl.xaml.cs">
+    <Compile Include="AircraftEquipmentControl.xaml.cs">
       <DependentUpon>AircraftEquipmentControl.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AircraftEquipment\ViewModel\AirCraftEquipmentConfigViewModel.cs">
+    <Compile Include="DeviceDriverControl.xaml.cs">
+      <DependentUpon>DeviceDriverControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdPartySoftwareControl.xaml.cs">
+      <DependentUpon>ThirdPartySoftwareControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\AirCraftEquipmentConfigViewModel.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AircraftEquipment\ViewModel\SubEquipmentViewModel.cs" />
+    <Compile Include="ViewModel\ELBViewModel.cs" />
+    <Compile Include="ViewModel\SubEquipmentViewModel.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -92,7 +99,11 @@
     <Compile Include="VAISParticipantControl.xaml.cs">
       <DependentUpon>VAISParticipantControl.xaml</DependentUpon>
     </Compile>
-    <Page Include="AircraftEquipment\AircraftEquipmentControl.xaml">
+    <Page Include="AircraftEquipmentControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DeviceDriverControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,6 +115,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ThirdPartySoftwareControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VAISParticipantControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
