@@ -11,10 +11,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ElectronicLogbook.AircraftEquipment.ViewModel;
+using ElectronicLogbook.ViewModel;
 using ElectronicLogbookDataLib.AirCraftEquipment;
 
-namespace ElectronicLogbook.AircraftEquipment
+namespace ElectronicLogbook
 {
     /// <summary>
     /// Interaction logic for AircraftEquipmentControl.xaml

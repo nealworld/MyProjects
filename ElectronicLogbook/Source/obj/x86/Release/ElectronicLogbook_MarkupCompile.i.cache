@@ -10,11 +10,11 @@ none
 false
 TRACE
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\App.xaml
-31223400747
+5376370770
 
-111181842987
+14-1729340382
 16-451845442
-AircraftEquipment\AircraftEquipmentControl.xaml;MainWindow.xaml;VAISParticipantControl.xaml;
+AircraftEquipmentControl.xaml;DeviceDriverControl.xaml;MainWindow.xaml;ThirdPartySoftwareControl.xaml;VAISParticipantControl.xaml;
 
-True
+False
 

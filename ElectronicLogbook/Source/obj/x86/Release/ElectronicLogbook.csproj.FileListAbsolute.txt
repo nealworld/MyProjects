@@ -67,8 +67,6 @@ D:\Projects\Projects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.
 D:\Projects\Projects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.Properties.Resources.resources
 D:\Projects\Projects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.csproj.GenerateResource.Cache
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.csprojResolveAssemblyReference.cache
-D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\AircraftEquipment\AircraftEquipmentControl.baml
-D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\AircraftEquipment\AircraftEquipmentControl.g.cs
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\MainWindow.g.cs
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\App.g.cs
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
@@ -104,3 +102,5 @@ E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\Electronic
 E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\obj\x86\Release\ElectronicLogbook.csproj.GenerateResource.Cache
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\VAISParticipantControl.baml
 D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\VAISParticipantControl.g.cs
+D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\AircraftEquipmentControl.baml
+D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\obj\x86\Release\AircraftEquipmentControl.g.cs

@@ -2,7 +2,6 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:ElectronicLogbook"
-        xmlns:AircraftEquipment="clr-namespace:ElectronicLogbook.AircraftEquipment"
         FontSize="14"
         Title="ELB" Height="Auto" Width="Auto" Topmost="True" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
     <DockPanel>
@@ -18,20 +17,19 @@
             <MenuItem Header="Remark" >
             </MenuItem>
         </Menu>
-        <TabControl  SelectedIndex="0" TabStripPlacement="Left">
+        <TabControl  SelectedIndex="0" TabStripPlacement="Left" >
             <TabItem Height="30" Background="White" BorderBrush="Transparent">
                 <TabItem.Header>
                     <DockPanel>
                         <TextBlock Text="Aircraft equipment" FontFamily="Arial" TextAlignment="Center" Width="150" Height="22" />
                     </DockPanel>
                 </TabItem.Header>
-                <AircraftEquipment:AircraftEquipmentControl />
+                <local:AircraftEquipmentControl />
             </TabItem>
             <TabItem Height="30" Background="White" BorderBrush="Transparent">
                 <TabItem.Header>
                     <DockPanel>
                         <TextBlock Text="VAIS participant" FontFamily="Arial" Width="150" Height="22" TextAlignment="Center" />
-                        <Separator />
                     </DockPanel>
                 </TabItem.Header>
                 <local:VAISParticipantControl />
@@ -40,29 +38,14 @@
                 <TabItem.Header>
                     <DockPanel>
                         <TextBlock Text="Device drivers" FontFamily="Arial" Width="150" Height="22" TextAlignment="Center" />
-
-                        <Separator />
                     </DockPanel>
                 </TabItem.Header>
-                <DockPanel>
-                    <ListView >
-                        <ListView.View>
-                            <GridView >
-                                <GridViewColumn Header="Device Name" Width="100" />
-                                <GridViewColumn Header="Driver Name"  Width="100" />
-                                <GridViewColumn Header="Driver Version Number"  Width="150" />
-                                <GridViewColumn Header="Driver Location"  Width="150" />
-                            </GridView>
-                        </ListView.View>
-                    </ListView>
-                </DockPanel>
+                <local:DeviceDriverControl/>
             </TabItem>
             <TabItem Height="30" Background="White" BorderBrush="Transparent">
                 <TabItem.Header>
                     <DockPanel>
                         <TextBlock Text="Third party softeware" FontFamily="Arial" Width="150" Height="22" TextAlignment="Center" />
-
-                        <Separator />
                     </DockPanel>
                 </TabItem.Header>
                 <DockPanel>

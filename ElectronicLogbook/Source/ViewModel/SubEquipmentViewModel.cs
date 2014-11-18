@@ -5,7 +5,7 @@ using System.Text;
 using ElectronicLogbookDataLib.AirCraftEquipment;
 using System.ComponentModel;
 
-namespace ElectronicLogbook.AircraftEquipment.ViewModel
+namespace ElectronicLogbook.ViewModel
 {
     public class SubEquipmentViewModel
     {

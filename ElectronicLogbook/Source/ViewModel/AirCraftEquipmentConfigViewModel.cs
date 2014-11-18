@@ -6,7 +6,7 @@ using ElectronicLogbookDataLib.AirCraftEquipment;
 using ElectronicLogbookDataLib.DataProcessor;
 using System.ComponentModel;
 
-namespace ElectronicLogbook.AircraftEquipment.ViewModel
+namespace ElectronicLogbook.ViewModel
 {
     public class AirCraftEquipmentConfigViewModel
     {

@@ -189,7 +189,7 @@ namespace ElectronicLogbookDataLib.DataProcessor
             return lResult;
         }
 
-        private void GetDriverAnd3rdPartyConfig(out string aDriverConfig, out string a3rdPartySW)
+        public void GetDriverAnd3rdPartyConfig(out string aDriverConfig, out string a3rdPartySW)
         {
             List<bool> lMessageReceived = new List<bool>();
             List<GEAviation.CommonSim.Collection> lStationBusList = new List<GEAviation.CommonSim.Collection>();
