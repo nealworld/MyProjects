@@ -9,12 +9,21 @@ ElectronicLogbook
 none
 false
 TRACE
+<<<<<<< HEAD
 E:\Project\GitHub\MyProjects\ElectronicLogbook\Source\App.xaml
 31223400747
 
 11244864416
 161057425695
 AircraftEquipment\AircraftEquipmentControl.xaml;MainWindow.xaml;VAISParticipantControl.xaml;
+=======
+D:\Projects\Projects\MyProjects\ElectronicLogbook\Source\App.xaml
+5376370770
 
-True
+14-1729340382
+16-451845442
+AircraftEquipmentControl.xaml;DeviceDriverControl.xaml;MainWindow.xaml;ThirdPartySoftwareControl.xaml;VAISParticipantControl.xaml;
+>>>>>>> origin/FirstBranch
+
+False
 
